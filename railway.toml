@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "php -S 0.0.0.0:${PORT:-8080} -t open"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
