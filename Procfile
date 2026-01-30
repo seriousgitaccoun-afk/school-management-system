@@ -1,4 +1,4 @@
-# Railway Configuration for CodeIgniter
-# This tells Railway how to run your PHP application
+# Railway Configuration - PHP with Apache
+# Railway will use this to serve the application
 
-web: vendor/bin/heroku-php-apache2 open/
+web: php -S 0.0.0.0:8080 -t open/public
