@@ -1,0 +1,42 @@
+					
+            <div class="row">
+                    <div class="col-sm-12">
+				  	<div class="panel panel-info">
+                            <div class="panel-heading"> <i class="fa fa-list"></i>&nbsp;&nbsp;<?php echo get_phrase('Class Mate');?></div>
+                            <div class="panel-wrapper collapse in" aria-expanded="true">
+                                <div class="panel-body table-responsive">
+			
+                                <table id="example23" class="display nowrap" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th width="80"><div><?php echo get_phrase('photo');?></div></th>
+                            <th><div><?php echo get_phrase('name');?></div></th>
+                            <th><div><?php echo get_phrase('email');?></div></th>
+                            <th><div><?php echo get_phrase('sex');?></div></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach($parent_student_profile as $key => $student){ ?>
+                        <tr>
+                            <td style="text-align: center;">
+                                <?php echo get_avatar_badge($student['name'], 32); ?>
+                            </td>
+                            <td><?php echo $student['name'];?></td>
+                            <td><?php echo $student['email'];?></td>
+                            <td><?php echo $student['sex'];?></td>
+
+                           
+                        </tr>
+
+                        <?php } ?>
+						
+                    </tbody>
+                </table>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

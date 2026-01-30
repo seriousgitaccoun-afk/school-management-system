@@ -1,0 +1,42 @@
+# Database configuration files
+open/application/config/database.php
+open/application/config/database.php.bak
+open/application/config/database.php.production
+
+# Environment variables
+.env
+.env.local
+
+# Logs and cache
+open/application/logs/*
+open/application/cache/*
+open/tmp/*
+
+# Uploads (user-generated content)
+open/uploads/*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if used)
+node_modules/
+
+# Composer
+vendor/
+composer.lock
+
+# Sensitive backups
+*.bak
+*.sql
